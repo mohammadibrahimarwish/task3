@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع- سوق اونلاين لمواد البناء فى مصر </title>
+    <meta name="description" content="الموقع- سوق اونلاين لمواد البناء فى مصر">
+    <link rel="stylesheet" href="mawkaa.css">
+    <script src="./slik.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <!-- section 1 logo &navbar -->
+
+    <header class="iamge" style="background-image:url(https://elmawkaa.com/img/bg/home-bg-white.jpg);  padding-top: 0em; ">
+
+        <div>
+
+            <Nav style="float:right  ;">
+                <a href="https://elmawkaa.com/">
+                    <img class="logo" src="https://www.elmawkaa.com/img/logo.png" alt=" alt" style="width: 100px;height:100px; padding: right 1em ;">
+                </a>
+
+                <div class="navbar">
+
+                    <ul>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">الرئيسية</a></li>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">مواد بناء </a></li>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">المدونة</a></li>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">الباقات</a></li>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">كيف يعمل</a></li>
+                        <li style="float: right; padding-right: 1.5em ; padding-left: 1.5em ;"><a href="#">سجل معنا كمورد</a></li>
+                        <li style="float: right; padding-right: 1em ; padding-left: 1em ;"><a href="#">حمل التطبيق</a></li>
+                        <li style="float: right; padding-right: 1em ; padding-left: 1em ;"><a href="#">اتصل بنا </a></li>
+                        <li style="float: right; padding-right: .1em ; padding-left:  29em ;"><a href="#">english</a></li>
+                    </ul>
+                </div>
+            </Nav>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!-- making breakline to display background image -->
+        <div dir="rtl">
+
+            <form id="regForm" action="">
+
+                <h1 style="text-align: center;">اطلب حديد تسليح:</h1>
+
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">معلومات المنتج :
+
+                    <h6> الكمية الكلية بالطن * </h6>
+                    <p>
+                        <input pattern="/^([a-z0-9]{4,})$/" placeholder="## طن" />
+
+                    </p>
+                    <h6> انتاج مصنع ايه؟ سيبها فاضية لو مش فارق معاك المصنع * </h6>
+
+                    <p>
+                        <input list="factory" name="factory" placeholder="اسم المصنع..." />
+                        <datalist id="factory">
+                            <option value="بشاى">
+                            <option value="عز">
+                            <option value="المصريين">
+                            <option value="العتال">
+                            <option value="الجارحى">
+                          </datalist>
+
+
+                    </p>
+                    <h6> الأقطار المطلوبة * </h6>
+                    <p>
+                        <input list="dia" name="dia" placeholder="d=....">
+                        <datalist id="dia">
+                            <option value="8">
+                            <option value="10">
+                            <option value="12">
+                            <option value="16">
+                            <option value="18">
+                        </datalist>
+
+
+                    </p>
+                </div>
+
+                <div class="tab"> المشروع:
+                    <h6>
+                        مكان المشروع
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        عنوان المشروع
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        مرحلة المشروع
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        عايز تنفذ الطلبية
+                    </h6>
+                    <p><input type="date" placeholder="dd" placeholder="mm" placeholder="yyyy"></p>
+
+
+                </div>
+
+                <div class="tab">تفاصيل اخرى :
+                    <h6>
+                        طريقة الدفع
+                    </h6>
+                    <p><input placeholder="''..."></p>
+                    <h6>
+                        عايز فاتورة ضريبية
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        اكتب هنا اى تفاصيل اخرى
+                    </h6>
+                    <p> <textarea name="message" rows="10" cols="30">........</textarea>
+                        <br><br></p>
+
+
+                </div>
+                <div class="tab">ازاى نوصلك :
+                    <h6>
+                        اسم شركتك ايه؟ اكتب اسمك الثنائي لو مفيش شركة *
+                    </h6>
+                    <p><input placeholder="''..."></p>
+                    <h6>
+                        اسمك ايه؟ *
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        اسم العائلة؟ *
+                    </h6>
+                    <p><input placeholder="''..."></p>
+                    <h6>
+                        رقم تليفونك... يفضل يكون به واتساب *
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        ايميلك *
+                    </h6>
+                    <p><input placeholder="..."></p>
+                    <h6>
+                        (referral code) كود التسويق *
+                    </h6>
+                    <p><input placeholder="..."></p>
+
+                    <input type="checkbox" id="vehicle1">
+                    <label for="vehicle1"> تذكرنى دائما</label>
+                    <input type="checkbox" id="vehicle2">
+                    <label for="vehicle2">  تذكر المشروع </label>
+
+
+
+
+                </div>
+
+                <div style="overflow:auto;">
+                    <div style="float:left;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">السابق</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">التالى</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+</body>
