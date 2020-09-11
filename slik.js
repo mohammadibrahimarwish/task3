@@ -2,21 +2,21 @@ var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
-    // This function will display the specified tab of the form...
+    // This function will display the specified tab of the form ...
     var x = document.getElementsByClassName("tab");
     x[n].style.display = "block";
-    //... and fix the Previous/Next buttons:
+    // ... and fix the Previous/Next buttons:
     if (n == 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
         document.getElementById("prevBtn").style.display = "inline";
     }
     if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
+        document.getElementById("nextBtn").innerHTML = "اطلب عرض سعر";
     } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").innerHTML = "التالى";
     }
-    //... and run a function that will display the correct step indicator:
+    // ... and run a function that displays the correct step indicator:
     fixStepIndicator(n)
 }
 
@@ -29,9 +29,9 @@ function nextPrev(n) {
     x[currentTab].style.display = "none";
     // Increase or decrease the current tab by 1:
     currentTab = currentTab + n;
-    // if you have reached the end of the form...
+    // if you have reached the end of the form... :
     if (currentTab >= x.length) {
-        // ... the form gets submitted:
+        //...the form gets submitted:
         document.getElementById("regForm").submit();
         return false;
     }
@@ -50,10 +50,9 @@ function validateForm() {
         if (y[i].value == "") {
             // add an "invalid" class to the field:
             y[i].className += " invalid";
-            // and set the current valid status to false
+            // and set the current valid status to false:
             valid = false;
         }
-
     }
     // If the valid status is true, mark the step as finished and valid:
     if (valid) {
@@ -68,6 +67,6 @@ function fixStepIndicator(n) {
     for (i = 0; i < x.length; i++) {
         x[i].className = x[i].className.replace(" active", "");
     }
-    //... and adds the "active" class on the current step:
+    //... and adds the "active" class to the current step:
     x[n].className += " active";
 }
